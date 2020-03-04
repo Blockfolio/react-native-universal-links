@@ -1,17 +1,21 @@
 # react-native-universal-links
+Library to help an application resolve and open deep/universal links.
+
+*Note: this library does not help handle incoming universal links*
 
 ## Getting started
 
-`$ npm install react-native-universal-links --save`
+`$ yarn add Blockfolio/react-native-universal-links`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-universal-links`
+`$ cd ios`
+
+`$ pod install`
 
 ## Usage
 ```javascript
 import UniversalLinks from 'react-native-universal-links';
 
-// TODO: What to do with the module?
-UniversalLinks;
+UniversalLinks.openURL('some universal link');
 ```
